@@ -1,3 +1,5 @@
+import time
+
 from core.config import Config
 from core.message import Message
 from core.prompt import Prompt
@@ -120,11 +122,12 @@ class SecGPTAgent:
             thoughts = response['thoughts']
             command = response['command']
             self.log_chat_response(thoughts, command)
-            user_input = input(":")
-            self.process_command(response)
+            user_input = input("Input 'n' to re-gen: ")
+            if user_input != 'n':
+                self.process_command(response)
         except Exception as e:
             self.log_error(e)
-            raise e
+            time.sleep(10)
 
     def log_chat_response(self, thoughts, command):
         """Log chat response."""
