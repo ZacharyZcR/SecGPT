@@ -1,3 +1,5 @@
+![SecGPT](https://github.com/ZacharyZcR/SecGPT/blob/main/images/SecGPT.png)
+
 # SecGPT
 
 SecGPT is an open-source project inspired by AutoGPT, borrowing from its prompts and design patterns, but with significant code refactoring. As a solo developer project, we cannot guarantee the full quality of the code, but it has been extensively optimized and refactored in conjunction with GPT-4. We hope this will improve the overall code quality to some extent.

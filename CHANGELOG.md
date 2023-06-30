@@ -10,6 +10,7 @@ A Test Project for a Network Security-oriented LLM Tool Emulating AutoGPT
 - Added new plugin `http_request`.
 - Now, you can regenerate by entering 'n' for enhanced user interaction.
 - Added some new dependencies.
+- Added Logo.
 
 ### Changed
 - Optimized `sqlmap_test` plugin.

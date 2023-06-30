@@ -1,3 +1,5 @@
+![SecGPT](https://github.com/ZacharyZcR/SecGPT/blob/main/images/SecGPT.png)
+
 # SecGPT
 
 SecGPT 是一个受AutoGPT启发的开源项目，尽管在提示和设计模式上有所借鉴，但在代码重构方面做了重大改进。作为一个独立开发者项目，我们无法保证代码的完全质量，但已经对其进行了大量优化和重构，以便与GPT-4相结合。我们希望这会在一定程度上提高整体代码质量。
