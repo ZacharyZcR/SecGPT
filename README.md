@@ -181,7 +181,9 @@ This part shows that SecGPT, based on the results, made the decision to store th
 
 We welcome any type of contribution, including but not limited to issue reporting, documentation improvements, feature suggestions, and pull requests.
 
-For plugin writing, please refer to Plugin.md in the doc directory
+For plugin writing, please refer to Plugins.md in the doc directory
+
+**You can now have GPT4 auto-generate new plugins you want by copying the plugin format!**
 
 ## License
 
