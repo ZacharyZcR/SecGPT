@@ -1,19 +1,19 @@
-# Python 插件规范手册
+# Plugin Standards Manual
 
-此手册旨在提供Python插件开发的基本规范和最佳实践。
+This manual is aimed at providing basic standards and best practices for plugin development.
 
-## 1. 插件结构
+## 1. Plugin Structure
 
-每个插件都应包含两部分：
+Each plugin should include two parts:
 
-- 主要功能函数（`main_func`）：此函数实现插件的主要功能。它应接受一个参数，这个参数是一个字典，包含所有需要的参数。
-- `register`函数：此函数返回一个描述插件的字典，包括插件的名称、描述、主要功能函数及其参数。
+- Main function (`main_func`): This function implements the main functionality of the plugin. It should accept one argument which is a dictionary containing all the necessary parameters.
+- `register` function: This function returns a dictionary describing the plugin, including the plugin's name, description, main function and its parameters.
 
-示例：
+Example:
 
-```
-pythonCopy codedef main_func(args):
-    # 插件主要功能的实现
+```python
+def main_func(args):
+    # Implementation of the main functionality of the plugin
 
 def register():
     return {
@@ -24,51 +24,51 @@ def register():
     }
 ```
 
-## 2. 函数命名
+## 2. Function Naming
 
-函数命名应遵循Python的PEP8规范。函数名应是小写，如果由多个单词组成，则用下划线连接。
+Function naming should follow Python's PEP8 convention. Function names should be lowercase, with words separated by underscores if it consists of multiple words.
 
-## 3. 错误处理
+## 3. Error Handling
 
-插件应该优雅地处理所有可能的错误，这可以通过在主要功能函数中包含try/except块来实现。如果捕获到错误，插件应打印一个错误消息并返回一个描述错误的字符串。
+The plugin should gracefully handle all potential errors, this can be achieved by including a try/except block in the main function. If an error is caught, the plugin should print an error message and return a string describing the error.
 
-示例：
-
-```python
-pythonCopy codedef main_func(args):
-    try:
-        # 插件主要功能的实现
-    except Exception as e:
-        print(f"Error: {str(e)}")
-        return f"Commands {register()['name']}: Failed. Error: {str(e)}"
-```
-
-## 4. 返回值
-
-插件的主要功能函数应返回一个字符串，遵循以下格式：`Commands [插件名称]: [成功或失败]. [返回的数据或错误信息]`。成功的返回应该包含成功的确认消息，失败的返回应该包含失败的原因。
-
-示例：
+Example:
 
 ```python
 def main_func(args):
     try:
-        # 插件主要功能的实现
-        return f"Commands {register()['name']}: Success. Data: {result_data}"
+        # Implementation of the main functionality of the plugin
     except Exception as e:
         print(f"Error: {str(e)}")
-        return f"Commands {register()['name']}: Failed. Error: {str(e)}"
+        return f"Commands {plugin_name}: Failed. Error: {str(e)}"
 ```
 
-## 5. 调试信息
+## 4. Return Values
 
-为了方便调试，插件应打印有关其运行情况的信息，例如执行的命令、返回的状态码等。
+The main function of the plugin should return a string following the format: `Commands [Plugin Name]: [Success or Failed]. [Returned data or error information]`. Successful returns should include a confirmation message of success, failed returns should include the reason for the failure.
 
-## 6. 依赖项管理
+Example:
 
-如果插件依赖于某些外部库，这些库应在文件顶部被导入。如果可能，应尽量使用Python标准库，以减少依赖性。
+```python
+def main_func(args):
+    try:
+        # Implementation of the main functionality of the plugin
+        return f"Commands {plugin_name}: Success. Data: {result_data}"
+    except Exception as e:
+        print(f"Error: {str(e)}")
+        return f"Commands {plugin_name}: Failed. Error: {str(e)}"
+```
 
-## 7. 安全性
+## 5. Debugging Information
 
-插件应考虑安全性，例如不应直接执行用户提供的命令，不应在无需认证的情况下公开敏感信息等。
+For ease of debugging, plugins should print information about its run, such as the command executed, returned status codes, etc.
 
-遵循以上规范和最佳实践，将有助于你创建高质量，可维护的Python插件。
+## 6. Dependency Management
+
+If the plugin depends on certain external libraries, these should be imported at the top of the file. If possible, use the Python standard library as much as possible to reduce dependencies.
+
+## 7. Security
+
+Plugins should consider security, for example, they should not execute user-provided commands directly, they should not expose sensitive information without authentication, etc.
+
+Following these standards and best practices will help you create high-quality, maintainable Python plugins.
