@@ -10,6 +10,22 @@ Inheriting the philosophy of AutoGPT, the uniqueness of SecGPT lies in its more 
 
 How does SecGPT work? It aggregates existing plugin features and makes decisions through AI. Based on these decisions, it constructs basic behavior logic. Then, following this logic, it calls local plugin functions to attempt tasks such as website penetration, vulnerability scanning, code audit, and report writing.
 
+![Static Badge](https://img.shields.io/badge/Feature-Experimental%20Project-ffffff)
+![Static Badge](https://img.shields.io/badge/Feature-Requires%20OpenAI%20ApiKey-ffffff)
+![Static Badge](https://img.shields.io/badge/Feature-Need%20more%20technical%20support-ffffff)
+![Static Badge](https://img.shields.io/badge/Feature-README_zh.md-ffffff)
+
+![Static Badge](https://img.shields.io/badge/Achieved-Solved%20SqliLab%20Less%201-008000)
+![Static Badge](https://img.shields.io/badge/Achieved-Web%20Requests-008000)
+![Static Badge](https://img.shields.io/badge/Achieved-File%20Operations-008000)
+
+![Static Badge](https://img.shields.io/badge/TODO-Much%20more%20plugins-ff0000)
+![Static Badge](https://img.shields.io/badge/TODO-Optimize%20user%20interaction-ff0000)
+![Static Badge](https://img.shields.io/badge/TODO-Optimize%20the%20interface-ff0000)
+![Static Badge](https://img.shields.io/badge/TODO-AI%20Gen%20Plugins-ffd700)
+
+[中文文档](https://github.com/ZacharyZcR/SecGPT/edit/main/README_zh.md)
+
 ## Table of Contents
 
 - Installation
