@@ -1,4 +1,6 @@
-![SecGPT](https://github.com/ZacharyZcR/SecGPT/blob/main/images/SecGPT.png)
+<p align="center">
+  <img src="C:\Users\Administrator\Desktop\SecGPT.png" alt="SecGPT">
+</p>
 
 # SecGPT
 
