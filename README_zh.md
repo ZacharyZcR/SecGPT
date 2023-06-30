@@ -10,6 +10,20 @@ SecGPT 是一个受AutoGPT启发的开源项目，尽管在提示和设计模式
 
 SecGPT如何工作呢？它汇总现有的插件功能，并通过AI进行决策。基于这些决策，它构建基础行为逻辑。然后，根据此逻辑，它调用本地插件功能，尝试完成网站渗透、漏洞扫描、代码审计和报告撰写等任务。
 
+![Static Badge](https://img.shields.io/badge/特性-实验性项目-ffffff)
+![Static Badge](https://img.shields.io/badge/特性-需要OpenAI的ApiKey-ffffff)
+![Static Badge](https://img.shields.io/badge/特性-需要更多技术支持-ffffff)
+![Static Badge](https://img.shields.io/badge/特性-README_zh.md-ffffff)
+
+![Static Badge](https://img.shields.io/badge/已完成-解决SqliLab第一课-008000)
+![Static Badge](https://img.shields.io/badge/已完成-Web请求-008000)
+![Static Badge](https://img.shields.io/badge/已完成-文件操作-008000)
+
+![Static Badge](https://img.shields.io/badge/待做-更多插件-ff0000)
+![Static Badge](https://img.shields.io/badge/待做-优化用户交互-ff0000)
+![Static Badge](https://img.shields.io/badge/待做-优化界面-ff0000)
+![Static Badge](https://img.shields.io/badge/待做-AI生成插件-ffd700)
+
 ## 目录
 
 - 安装
