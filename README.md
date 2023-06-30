@@ -50,7 +50,7 @@ pip install -r requirements.txt
 This section provides a comprehensive guide on how to get started with SecGPT. For example:
 
 ```
-shCopy codepython install.py # This command will check if your environment can run normally
+python install.py # This command will check if your environment can run normally
 python SecGPT.py # This command will start the program
 ```
 
