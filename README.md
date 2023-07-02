@@ -41,7 +41,7 @@ How does SecGPT work? It aggregates existing plugin features and makes decisions
 In this section, you should detail how to install the project, including any dependencies required. For example:
 
 ```
-shCopy codegit clone https://github.com/ZacharyZcR/SecGPT.git
+git clone https://github.com/ZacharyZcR/SecGPT.git
 pip install -r requirements.txt
 ```
 
