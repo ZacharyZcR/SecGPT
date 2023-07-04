@@ -14,6 +14,22 @@ The update speed is slow, the author is reading and learning the source code of 
 
 **The plugin is being written and tested, if you are interested, you can join our development.**
 
+![Static Badge](https://img.shields.io/badge/Feature-Experimental%20Project-ffffff)
+![Static Badge](https://img.shields.io/badge/Feature-Requires%20OpenAI%20ApiKey-ffffff)
+![Static Badge](https://img.shields.io/badge/Feature-Need%20more%20technical%20support-ffffff)
+![Static Badge](https://img.shields.io/badge/Feature-README_zh.md-ffffff)
+
+![Static Badge](https://img.shields.io/badge/Achieved-Solved%20SqliLab%20Less%201-008000)
+![Static Badge](https://img.shields.io/badge/Achieved-Web%20Requests-008000)
+![Static Badge](https://img.shields.io/badge/Achieved-File%20Operations-008000)
+
+![Static Badge](https://img.shields.io/badge/TODO-Much%20more%20plugins-ff0000)
+![Static Badge](https://img.shields.io/badge/TODO-Optimize%20user%20interaction-ff0000)
+![Static Badge](https://img.shields.io/badge/TODO-Optimize%20the%20interface-ff0000)
+![Static Badge](https://img.shields.io/badge/TODO-AI%20Gen%20Plugins-ffd700)
+
+[中文文档](https://github.com/ZacharyZcR/SecGPT/edit/main/README_zh.md)
+
 ## Table of Contents
 
 - Installation
@@ -29,7 +45,7 @@ The update speed is slow, the author is reading and learning the source code of 
 In this section, you should detail how to install the project, including any dependencies required. For example:
 
 ```
-shCopy codegit clone https://github.com/ZacharyZcR/SecGPT.git
+git clone https://github.com/ZacharyZcR/SecGPT.git
 pip install -r requirements.txt
 ```
 
@@ -38,7 +54,7 @@ pip install -r requirements.txt
 This section provides a comprehensive guide on how to get started with SecGPT. For example:
 
 ```
-shCopy codepython install.py # This command will check if your environment can run normally
+python install.py # This command will check if your environment can run normally
 python SecGPT.py # This command will start the program
 ```
 

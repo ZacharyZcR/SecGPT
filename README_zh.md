@@ -14,6 +14,20 @@ SecGPT如何工作呢？它汇总现有的插件功能，并通过AI进行决策
 
 **正在进行插件的编写和测试，如果你有兴趣，可以加入我们的开发。**
 
+![Static Badge](https://img.shields.io/badge/特性-实验性项目-ffffff)
+![Static Badge](https://img.shields.io/badge/特性-需要OpenAI的ApiKey-ffffff)
+![Static Badge](https://img.shields.io/badge/特性-需要更多技术支持-ffffff)
+![Static Badge](https://img.shields.io/badge/特性-README_zh.md-ffffff)
+
+![Static Badge](https://img.shields.io/badge/已完成-解决SqliLab第一课-008000)
+![Static Badge](https://img.shields.io/badge/已完成-Web请求-008000)
+![Static Badge](https://img.shields.io/badge/已完成-文件操作-008000)
+
+![Static Badge](https://img.shields.io/badge/待做-更多插件-ff0000)
+![Static Badge](https://img.shields.io/badge/待做-优化用户交互-ff0000)
+![Static Badge](https://img.shields.io/badge/待做-优化界面-ff0000)
+![Static Badge](https://img.shields.io/badge/待做-AI生成插件-ffd700)
+
 ## 目录
 
 - 安装
