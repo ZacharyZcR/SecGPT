@@ -2,6 +2,21 @@
 
 A Test Project for a Network Security-oriented LLM Tool Emulating AutoGPT
 
+## [1.0.3] - 2023-07-04
+
+### Added
+- Added some new dependencies.
+- Added new `nmap` plugin.
+- Added new `dirsearch` plugin.
+- New functionality to manually adjust role settings.
+
+### Changed
+- Optimized `sqlmap_test` plugin.
+- Refactored some of the page interaction logic.
+
+### Removed
+- Removed `webtest` plugin.
+
 ## [1.0.2] - 2023-06-30
 
 ### Added

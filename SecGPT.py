@@ -10,6 +10,7 @@ from core.plugins import Plugins
 from core.log import Log
 
 import json
+import sys
 
 class SecGPTAgent:
     def __init__(self):
@@ -111,6 +112,9 @@ class SecGPTAgent:
         user_input = input("Do you want to create a new character? (y/n): ")
         if user_input == 'y':
             self.init_character()
+            print('Please check config/character.yaml for your character information.')
+            print('Modify the file if you want to change your character information.')
+            sys.exit()
         self.init_prompt()
         while True:
             self.process_chat_response()

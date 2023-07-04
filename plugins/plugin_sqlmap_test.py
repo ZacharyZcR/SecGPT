@@ -1,27 +1,26 @@
 import subprocess
+import os
+from urllib.parse import urlparse
 
 def sqlmap_test(args):
     try:
         base_url = args['url']
         params = args.get('params')
-        method = args.get('method', 'GET')
-        data = args.get('data')
-        cookie = args.get('cookie')
+        if not params:
+            return "Commands SqlmapTest: Failed. Error: params is required."
 
         url = f"{base_url}?{params}" if params else base_url
-        command = f"sqlmap -u \"{url}\" --method={method} --batch --dump"
+        command = f"sqlmap -u \"{url}\" --batch"
 
-        if data:
-            command += f" --data={data}"
-        if cookie:
-            command += f" --cookie={cookie}"
+        subprocess.run(command, shell=True)
 
-        result = subprocess.run(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        hostname = urlparse(base_url).hostname
+        log_file_path = os.path.join('C:\\', 'Users', 'Administrator', 'AppData', 'Local', 'sqlmap', 'output', hostname, 'log')
 
-        if result.returncode == 0:
-            return f'Commands SqlmapTest: Success. Data: {result.stdout.decode()}'
-        else:
-            return f'Commands SqlmapTest: Failed. Error: {result.stderr.decode()}'
+        with open(log_file_path, 'r') as log_file:
+            log_content = log_file.read()
+
+        return f'Commands SqlmapTest: Success. Log content: {log_content}'
 
     except Exception as e:
         return f"Commands SqlmapTest: Failed. Error: {str(e)}"
@@ -29,13 +28,10 @@ def sqlmap_test(args):
 def register():
     return {
         'name': 'SqlmapTest',
-        'description': 'Run a sqlmap test on a specified URL and dump database data.',
+        'description': 'Run the sqlmap test against the specified URL, params must be provided',
         'func': sqlmap_test,
         'args': [
             {'name': 'url', 'description': 'Base URL to be tested.'},
-            {'name': 'method', 'description': 'HTTP method to be used (GET, POST, etc.).', 'optional': True},
-            {'name': 'params', 'description': 'URL parameters must to be like (id=1, etc.).', 'optional': True},
-            {'name': 'data', 'description': 'Data to be sent in a POST request.', 'optional': True},
-            {'name': 'cookie', 'description': 'HTTP Cookie header value.', 'optional': True},
+            {'name': 'params', 'description': 'URL parameters must to be like (arg1=1&arg2=2, etc.).'},
         ]
     }

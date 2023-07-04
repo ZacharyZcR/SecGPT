@@ -10,6 +10,10 @@ Inheriting the philosophy of AutoGPT, the uniqueness of SecGPT lies in its more 
 
 How does SecGPT work? It aggregates existing plugin features and makes decisions through AI. Based on these decisions, it constructs basic behavior logic. Then, following this logic, it calls local plugin functions to attempt tasks such as website penetration, vulnerability scanning, code audit, and report writing.
 
+The update speed is slow, the author is reading and learning the source code of LangChain.
+
+**The plugin is being written and tested, if you are interested, you can join our development.**
+
 ## Table of Contents
 
 - Installation
