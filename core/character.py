@@ -37,6 +37,10 @@ class Character:
         template = self.get_character_info(role)
         return template.replace('{{user_prompt}}', user_input)
 
+    def render_character_system_info(self, user_input):
+        template = self.get_character_info('system')
+        return template.replace('{{Commands}}', user_input)
+
     def set_character_info(self, text):
         try:
             name = re.search(NAME_REGEX, text, re.IGNORECASE).group(1)

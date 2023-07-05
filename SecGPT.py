@@ -52,6 +52,7 @@ class SecGPTAgent:
         try:
             user_input = input("Please input your goal: ")
             self.character_manager_user = self.character_manager.render_character_info("user", user_input)
+            self.character_manager_system = self.character_manager.render_character_system_info(self.plugins_manager.gen_plugins_prompt())
             self.message_manager.add_message("system", self.character_manager_system)
             self.message_manager.add_message("user", self.character_manager_user)
             response = self.interactor.chat(self.message_manager.get_messages())
@@ -76,7 +77,6 @@ class SecGPTAgent:
         """Initialize prompt."""
         try:
             self.retrieve_character_info_if_missing()
-            self.plugins_manager.load_plugins()
             self.plugins = self.plugins_manager.gen_plugins_prompt()
             self.system_prompts = self.prompt_manager.gen_system_prompt(self.name, self.desc, self.goals, self.plugins)
             self.user_prompts = self.prompt_manager.gen_user_prompt()

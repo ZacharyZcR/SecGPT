@@ -2,6 +2,13 @@
 
 A Test Project for a Network Security-oriented LLM Tool Emulating AutoGPT
 
+## [1.0.4] - 2023-07-06
+
+### Changed
+- Optimized Prompt.
+- Modified `sqlmap_test` plugin.
+- Adjusted logic.
+
 ## [1.0.3] - 2023-07-04
 
 ### Added

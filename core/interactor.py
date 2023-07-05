@@ -17,6 +17,7 @@ class Interactor:
                 model=self.model,
                 messages=messages
             )
+            self.logger.debug(f"Messages: {messages}")
             self.logger.debug(f"Response: {response}")
             return response.choices[0].message.content
         except Exception as e:

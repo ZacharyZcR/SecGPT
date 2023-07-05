@@ -12,6 +12,7 @@ class Plugins:
             raise FileNotFoundError(f"Plugin directory does not exist: {plugin_directory}")
         self.plugin_directory = plugin_directory
         self.plugins = {}
+        self.load_plugins()
 
     def load_plugins(self):
         files = os.listdir(self.plugin_directory)

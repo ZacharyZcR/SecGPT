@@ -12,15 +12,12 @@ def sqlmap_test(args):
         url = f"{base_url}?{params}" if params else base_url
         command = f"sqlmap -u \"{url}\" --batch"
 
-        subprocess.run(command, shell=True)
+        result = subprocess.run(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-        hostname = urlparse(base_url).hostname
-        log_file_path = os.path.join('C:\\', 'Users', 'Administrator', 'AppData', 'Local', 'sqlmap', 'output', hostname, 'log')
-
-        with open(log_file_path, 'r') as log_file:
-            log_content = log_file.read()
-
-        return f'Commands SqlmapTest: Success. Log content: {log_content}'
+        if result.returncode == 0:
+            return f'Commands SqlmapTest: Success. Data: {result.stdout.decode()}'
+        else:
+            return f'Commands SqlmapTest: Failed. Error: {result.stderr.decode()}'
 
     except Exception as e:
         return f"Commands SqlmapTest: Failed. Error: {str(e)}"
