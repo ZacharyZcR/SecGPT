@@ -28,7 +28,7 @@ The update speed is slow, the author is reading and learning the source code of 
 ![Static Badge](https://img.shields.io/badge/TODO-Optimize%20the%20interface-ff0000)
 ![Static Badge](https://img.shields.io/badge/TODO-AI%20Gen%20Plugins-ffd700)
 
-[中文文档](https://github.com/ZacharyZcR/SecGPT/edit/main/README_zh.md)
+[中文文档](https://github.com/ZacharyZcR/SecGPT/blob/main/README_zh.md)
 
 ## Table of Contents
 
